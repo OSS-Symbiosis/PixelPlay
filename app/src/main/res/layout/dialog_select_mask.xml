@@ -13,85 +13,96 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_marginTop="10dp"
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Uploaded Image"
             android:gravity="center"
-            android:textSize="18sp"/>
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lora_italic"/>
 
         <ImageView
             android:id="@+id/imgDialogPreview"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/btnOriginal"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
                 android:textSize="18sp"
                 android:text="Original"
                 android:textAllCaps="false"
-                android:gravity="center"/>
+                android:paddingTop="-4dp"
+                android:gravity="center"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:foreground="@drawable/card_background"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/btnHeart"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Heart"
-                android:textAllCaps="false"
-                android:gravity="center"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user_image_frame_1"
+                android:padding="5dp"
+                android:foreground="@drawable/card_background"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                android:contentDescription="Heart Button"
+                />
 
-            <Button
+            <ImageButton
                 android:id="@+id/btnSquare"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Square"
-                android:textAllCaps="false"
-                android:gravity="center"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user_image_frame_2"
+                android:padding="5dp"
+                android:foreground="@drawable/card_background"
+                android:scaleType="fitCenter"
+                android:contentDescription="Square Button"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/btnCircle"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Circle"
-                android:textAllCaps="false"
-                android:gravity="center"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user_image_frame_3"
+                android:padding="5dp"
+                android:foreground="@drawable/card_background"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                android:contentDescription="Circle Button"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/btnRectangle"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Rectangle"
-                android:textAllCaps="false"
-                android:gravity="center"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user_image_frame_4"
+                android:padding="5dp"
+                android:foreground="@drawable/card_background"
+                android:scaleType="fitCenter"
+                android:contentDescription="Rectangle Button"/>
 
         </LinearLayout>
 
         <Button
             android:id="@+id/btnUseThisImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
             android:text="Use this Image"
             android:textAllCaps="false"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"/>
 
     </LinearLayout>
 

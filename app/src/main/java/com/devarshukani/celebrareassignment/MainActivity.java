@@ -18,6 +18,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,7 +34,8 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity {
 
     final int REQUESTCODE = 1000;
-    Button btnSelectImage, btnOriginal, btnHeart, btnSquare, btnCircle, btnRectangle;
+    Button btnSelectImage, btnOriginal;
+    ImageButton btnHeart, btnSquare, btnCircle, btnRectangle;
     ImageView imgShowImage, imgDialogPreview;
     TextView okay_text, btnUseThisImage;
     Dialog dialog;
@@ -53,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         assert getSupportActionBar() != null;   //null check
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //show back button
 
-
         btnSelectImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(Intent.createChooser(i,"Title"),REQUESTCODE);
             }
         });
-
     }
 
     @Override

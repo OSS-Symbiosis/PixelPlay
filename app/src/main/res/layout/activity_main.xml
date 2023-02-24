@@ -4,42 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:backgroundTint="#F3F3F3">
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="409dp"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="148dp"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
+        android:foreground="@drawable/card_background"
+        android:padding="10dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" >
 
-    <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:gravity="center"
+                android:text="Upload Image"
+                android:textSize="23sp"
+                android:fontFamily="@font/lora_italic"/>
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_700"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:text="Choose from Device"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_regular"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imgShowImage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Upload Image"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btnSelectImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Choose from Device"
-            android:textSize="18sp"/>
-
-        <ImageView
-            android:id="@+id/imgShowImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_margin="15dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
