@@ -1,7 +1,7 @@
-package com.devarshukani.celebrareassignment;
+package com.devarshukani.pixelplay;
 
 import static android.graphics.BitmapFactory.decodeResource;
-import static com.devarshukani.celebrareassignment.R.id.btnOriginal;
+import static com.devarshukani.pixelplay.R.id.btnOriginal;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -11,7 +11,6 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -21,9 +20,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 

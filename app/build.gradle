@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.devarshukani.celebrareassignment'
+    namespace 'com.devarshukani.pixelplay'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.devarshukani.celebrareassignment"
+        applicationId "com.devarshukani.pixelplay"
         minSdk 24
         targetSdk 33
         versionCode 1

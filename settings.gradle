@@ -15,5 +15,5 @@ dependencyResolutionManagement {
 
     }
 }
-rootProject.name = "CelebrareAssignment"
+rootProject.name = "PixelPlay"
 include ':app'

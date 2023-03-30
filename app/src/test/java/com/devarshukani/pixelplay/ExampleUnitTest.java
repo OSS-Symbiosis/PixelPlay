@@ -1,4 +1,4 @@
-package com.devarshukani.celebrareassignment;
+package com.devarshukani.pixelplay;
 
 import org.junit.Test;
 
