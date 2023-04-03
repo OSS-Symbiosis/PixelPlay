@@ -23,7 +23,7 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#AF0000"
-        android:text="@string/pixel_play"
+        android:text="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
